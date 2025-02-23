@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard</class>
+ <widget class="QMainWindow" name="dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DashboardWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="inexTrackerButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>180</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #1e1e1e;  /* Slightly lighter than black for button */
+    color: white;               /* Text color */
+    border: 2px solid #5a5a5a;  /* Border color */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    font-size: 20px;            /* Font size for text */
+}
+
+QPushButton:hover {
+    background-color: #3d3d3d;  /* Change button color when hovered */
+    border: 2px solid #00bcd4;  
+}
+
+QPushButton:pressed {
+    background-color: #5a5a5a;  /* Darker color when button is pressed */
+    border: 2px solid #ffffff;
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Gray color for disabled state */
+    color: #aaaaaa;             /* Light gray text for disabled button */
+    border: 2px solid #5a5a5a;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Income &amp; Expense Tracker</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="budgetingButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>280</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #1e1e1e;  /* Slightly lighter than black for button */
+    color: white;               /* Text color */
+    border: 2px solid #5a5a5a;  /* Border color */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    font-size: 20px;            /* Font size for text */
+}
+
+QPushButton:hover {
+    background-color: #3d3d3d;  /* Change button color when hovered */
+    border: 2px solid #00bcd4;  
+}
+
+QPushButton:pressed {
+    background-color: #5a5a5a;  /* Darker color when button is pressed */
+    border: 2px solid #ffffff;
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Gray color for disabled state */
+    color: #aaaaaa;             /* Light gray text for disabled button */
+    border: 2px solid #5a5a5a;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Category-Based Budgeting</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="academicButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>380</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #1e1e1e;  /* Slightly lighter than black for button */
+    color: white;               /* Text color */
+    border: 2px solid #5a5a5a;  /* Border color */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    font-size: 20px;            /* Font size for text */
+}
+
+QPushButton:hover {
+    background-color: #3d3d3d;  /* Change button color when hovered */
+    border: 2px solid #00bcd4;  
+}
+
+QPushButton:pressed {
+    background-color: #5a5a5a;  /* Darker color when button is pressed */
+    border: 2px solid #ffffff;
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Gray color for disabled state */
+    color: #aaaaaa;             /* Light gray text for disabled button */
+    border: 2px solid #5a5a5a;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Academic Schedule</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>571</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #00bcd4;                   /* Teal color to match your theme */
+    font-size: 32px;                  /* Large font size for prominence */
+    font-weight: bold;                /* Bold text */
+    letter-spacing: 2px;              /* Add some spacing between letters */
+    text-align: center;               /* Center the headline */
+    padding: 10px;                    /* Padding around the text */
+    background-color: transparent;    /* Transparent background */
+    text-shadow: 2px 2px 5px #000;    /* Soft shadow for better readability */
+    border-bottom: 3px solid #00bcd4; /* Adds a bottom border for emphasis */
+    border-radius: 5px;               /* Rounded bottom border */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Welcome To Personal Organizer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logoutButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #55aaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+QPushButton:hover {
+    background-color: #aaffff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Log Out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="emaillabel">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Arial&quot;;
+color: #aaffff;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>321</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+border-image:url(:/image/dashboard.jpg/);
+}</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

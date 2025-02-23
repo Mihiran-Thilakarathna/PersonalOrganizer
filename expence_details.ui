@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>total_expences</class>
+ <widget class="QMainWindow" name="total_expences">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1105</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #aaaaaa;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>550</y>
+      <width>301</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 18px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total Expence of  all Categories  :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>30</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #00ffff;             
+	text-decoration: underline;
+	font: 700 italic 9pt &quot;Arial&quot;;
+    font-size: 30px;                
+    font-weight: bold;        
+    letter-spacing: 2px;          
+    text-align: center;              
+    background-color: transparent;    
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>EXPENCES REPORT</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>501</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>category</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>amount</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>description</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>date</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="totalexpenceBack">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>570</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #55aaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+QPushButton:hover {
+    background-color: #aaffff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>180</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 8pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total Food</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>230</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total Entertainment</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>280</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total Travelling</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>330</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total Clothing</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>380</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total  Education Equipment</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>430</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total University fees</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>480</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 16px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Total others</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ReportpushButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>500</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #ffaaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Generate a Chart Report</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>180</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>430</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>380</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>330</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>230</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>280</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>480</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>540</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>90</y>
+      <width>321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 18px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Select the month you want to view:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="monthComboBox">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>90</y>
+      <width>181</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select a month</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>January</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>February</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>March</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>April</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>May</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>June</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>July</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>August</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>September</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>October</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>November</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>December</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="showDetailsButton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>130</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #aaaaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Show Details</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

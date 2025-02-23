@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>login.png</file>
+        <file>inexdash1.jpeg</file>
+        <file>dashboard.jpg</file>
+    </qresource>
+</RCC>

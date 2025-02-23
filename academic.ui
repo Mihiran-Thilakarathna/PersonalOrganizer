@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>academic</class>
+ <widget class="QMainWindow" name="academic">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1128</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AcademicWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #aaa9a9;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="academicBack">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>560</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #55aaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+QPushButton:hover {
+    background-color: #aaffff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Subject Code</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="subjectlineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>120</y>
+      <width>271</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Subject</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="subjectCodelineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>160</y>
+      <width>271</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>0</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #00ffff;             
+	text-decoration: underline;
+	font: 700 italic 9pt &quot;Arial&quot;;
+    font-size: 25px;                
+    font-weight: bold;        
+    letter-spacing: 2px;          
+    text-align: center;              
+    background-color: transparent;    
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Academic Schedule</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="AcademicdateEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>271</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AcademicAdd">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>360</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #99ff99;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>220</y>
+      <width>611</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>subject</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>subjectCode</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>date</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>time</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>venue</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="viewScheduleButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #ffaaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>View the Schedule</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Time</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="timeEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>250</y>
+      <width>151</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>300</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Venue</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="venueLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>300</y>
+      <width>271</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>60</y>
+      <width>31</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>120</y>
+      <width>361</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 12pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Select the Month You want to View :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="monthComboBox">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>120</y>
+      <width>261</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select a Month</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>January</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>February</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>March</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>April</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>May</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>June</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>July</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>August</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>September</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>October</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>November</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>December</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #ffb285;             
+	text-decoration: underline;
+	font: 700 italic 9pt &quot;Arial&quot;;
+    font-size: 20px;                
+    font-weight: bold;        
+    letter-spacing: 2px;          
+    text-align: center;              
+    background-color: transparent;    
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Set The Schedules</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>60</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #ffb285;             
+	text-decoration: underline;
+	font: 700 italic 9pt &quot;Arial&quot;;
+    font-size: 20px;                
+    font-weight: bold;        
+    letter-spacing: 2px;          
+    text-align: center;              
+    background-color: transparent;    
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Veiw the Schedules</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>520</y>
+      <width>491</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0F7FA, stop:1 #B2EBF2);
+        border: 2px solid #0097A7;
+        border-radius: 12px;
+        padding: 10px;
+        font: 14px &quot;Verdana&quot;;
+        color: #004D40;
+        box-shadow: 5px 5px 5px #999999;
+    }
+    QGroupBox::title {
+        font-size: 15px;
+        color: #FFFFFF;
+        background-color: #0097A7;
+        padding: 5px;
+        border-radius: 7px;
+        text-align: center;
+    }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>291</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Helvetica Neue&quot;, sans-serif;
+background-color: transparent;
+</string>
+     </property>
+     <property name="text">
+      <string>Are there any Assignments ?</string>
+     </property>
+    </widget>
+    <widget class="QCommandLinkButton" name="assAddLink">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>16</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCommandLinkButton {
+    font: 700 12pt &quot;Helvetica Neue&quot;, sans-serif; /* Custom font with bold weight */
+    color: #aaffff; /* Text color */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Removes any default border */
+    padding: 5px; /* Adds padding for better visual spacing */
+}
+
+QCommandLinkButton:hover {
+    color: #0000ff; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+QCommandLinkButton:pressed {
+    color: #ff00ff; /* Slightly dimmed color when pressed */
+    background-color: #a6d4ff; /* Adjusted background when pressed */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Click for Add</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>academicBack</zorder>
+   <zorder>label_3</zorder>
+   <zorder>subjectlineEdit</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_2</zorder>
+   <zorder>subjectCodelineEdit</zorder>
+   <zorder>label</zorder>
+   <zorder>AcademicdateEdit</zorder>
+   <zorder>AcademicAdd</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>viewScheduleButton</zorder>
+   <zorder>label_6</zorder>
+   <zorder>timeEdit</zorder>
+   <zorder>label_7</zorder>
+   <zorder>venueLineEdit</zorder>
+   <zorder>line</zorder>
+   <zorder>label_8</zorder>
+   <zorder>monthComboBox</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

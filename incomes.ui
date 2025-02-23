@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>incomes</class>
+ <widget class="QMainWindow" name="incomes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>701</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IncomesWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(97, 97, 97);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCalendarWidget" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>280</y>
+      <width>251</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCalendarWidget QAbstractItemView {
+    selection-background-color: #66bb6a;  /* Selected date color */
+    background-color: #ffffff;
+    color: #2e7d32;
+    border-radius: 5px;
+}
+QCalendarWidget QToolButton {
+    background-color: #66bb6a;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+}
+QCalendarWidget QHeaderView::section {
+    background-color: #81c784;
+    color: #ffffff;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 18px;             
+    font-weight: bold;   
+	background-color:transparent;           
+}</string>
+    </property>
+    <property name="text">
+     <string>Income Source</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="incomeSourceComboBox">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 italic 9pt &quot;Arial&quot;;
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select a Source</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Job</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Allownce from parents</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Schorlaships</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Student Aid</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Others</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #00ffff;             
+	text-decoration: underline;
+	font: 700 italic 9pt &quot;Arial&quot;;
+    font-size: 25px;                
+    font-weight: bold;        
+    letter-spacing: 2px;          
+    text-align: center;              
+    background-color: transparent;    
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>SET INCOMES</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>280</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 18px;             
+    font-weight: bold;
+	background-color:transparent;              
+}</string>
+    </property>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="incomeAdd">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>460</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #99ff99;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>210</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 18px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Description</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="amountLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>150</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="incomesBack">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>93</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #55aaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+QPushButton:hover {
+    background-color: #aaffff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="descriptionLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>210</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="incomeClear">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>460</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #99ff99;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>150</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 18px;             
+    font-weight: bold;      
+	background-color:transparent;        
+}</string>
+    </property>
+    <property name="text">
+     <string>Amount</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="totalIncomeButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>510</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color:#aaaaff; 
+    color: #000000;      
+	font-weight: bold;           
+    border: 2px solid #5a5a5a;  
+    border-radius: 10px;      
+    padding: 10px 20px;       
+    font-size: 15px;            
+}
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Show Income Details</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>868</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#5d5d5d;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>441</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+    color: #ffffff;             
+    font-size: 18px;             
+    font-weight: bold;            
+    border: 2px solid #5a5a5a; 
+    border-radius: 10px;   
+    padding: 10px;             
+}
+</string>
+    </property>
+    <property name="title">
+     <string>LOGIN</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #ffffff;                 
+    font: 9pt &quot;Courier New&quot;;
+    font-size: 20px;             
+    font-weight: bold;           
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>User Name :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #ffffff;                 
+    font: 9pt &quot;Courier New&quot;;
+    font-size: 20px;             
+    font-weight: bold;           
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Password :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>401</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+    background-color: #9a9a9a;  /* Dark gray button background */
+    color: white;               /* Text color */
+    font-size: 18px;            /* Font size for the button text */
+    font-weight: bold;          /* Bold text */
+    border: 2px solid #5a5a5a;  /* Light gray border */
+    border-radius: 12px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    min-width: 100px;           /* Minimum button width */
+}
+
+QPushButton:hover {
+    background-color: #404040;  /* Lighter gray when hovered */
+    border: 2px solid #ffffff;  /* White border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #555555;  /* Darker shade when pressed */
+    border: 2px solid #888888;  /* Change border when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Dark gray for disabled buttons */
+    color: #777777;             /* Gray text for disabled buttons */
+    border: 2px solid #444444;  /* Gray border for disabled buttons */
+}
+</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>401</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+    background-color: #9a9a9a;  /* Dark gray button background */
+    color: white;               /* Text color */
+    font-size: 18px;            /* Font size for the button text */
+    font-weight: bold;          /* Bold text */
+    border: 2px solid #5a5a5a;  /* Light gray border */
+    border-radius: 12px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    min-width: 100px;           /* Minimum button width */
+}
+
+QPushButton:hover {
+    background-color: #404040;  /* Lighter gray when hovered */
+    border: 2px solid #ffffff;  /* White border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #555555;  /* Darker shade when pressed */
+    border: 2px solid #888888;  /* Change border when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Dark gray for disabled buttons */
+    color: #777777;             /* Gray text for disabled buttons */
+    border: 2px solid #444444;  /* Gray border for disabled buttons */
+}
+</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::EchoMode::Normal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>240</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #2d2d2d;  /* Dark gray button background */
+    color: white;               /* Text color */
+    font-size: 18px;            /* Font size for the button text */
+    font-weight: bold;          /* Bold text */
+    border: 2px solid #5a5a5a;  /* Light gray border */
+    border-radius: 12px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    min-width: 100px;           /* Minimum button width */
+}
+
+QPushButton:hover {
+    background-color: #404040;  /* Lighter gray when hovered */
+    border: 2px solid #ffffff;  /* White border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #555555;  /* Darker shade when pressed */
+    border: 2px solid #888888;  /* Change border when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Dark gray for disabled buttons */
+    color: #777777;             /* Gray text for disabled buttons */
+    border: 2px solid #444444;  /* Gray border for disabled buttons */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>271</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #ffffff;                 
+    font: 9pt &quot;Courier New&quot;;
+    font-size: 20px;             
+    font-weight: bold;           
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Don't have an account?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>340</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #2d2d2d;  /* Dark gray button background */
+    color: white;               /* Text color */
+    font-size: 18px;            /* Font size for the button text */
+    font-weight: bold;          /* Bold text */
+    border: 2px solid #5a5a5a;  /* Light gray border */
+    border-radius: 12px;        /* Rounded corners */
+    padding: 10px 20px;         /* Padding inside the button */
+    min-width: 100px;           /* Minimum button width */
+}
+
+QPushButton:hover {
+    background-color: #404040;  /* Lighter gray when hovered */
+    border: 2px solid #ffffff;  /* White border on hover */
+}
+
+QPushButton:pressed {
+    background-color: #555555;  /* Darker shade when pressed */
+    border: 2px solid #888888;  /* Change border when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #2e2e2e;  /* Dark gray for disabled buttons */
+    color: #777777;             /* Gray text for disabled buttons */
+    border: 2px solid #444444;  /* Gray border for disabled buttons */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Create  Account</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>-10</y>
+      <width>401</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+border-image:url(:/image/login.png/);
+}</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

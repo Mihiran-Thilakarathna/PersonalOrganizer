@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>expences</class>
+ <widget class="QMainWindow" name="expences">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ExpencesWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(97, 97, 97);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #00ffff;             
+	text-decoration: underline;
+	font: 700 italic 9pt &quot;Arial&quot;;
+    font-size: 25px;                
+    font-weight: bold;        
+    letter-spacing: 2px;          
+    text-align: center;              
+    background-color: transparent;    
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>SET  EXPENCES</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="expenceClear">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>440</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #99ff99;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="expenceCategoryComboBox">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 italic 9pt &quot;Arial&quot;;
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Select a Category</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Food</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Entertaintment</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Traveling</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Clothing</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Education equipment</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>University Fees</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Other</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>130</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 15px;             
+    font-weight: bold;      
+	background-color:transparent;        
+}</string>
+    </property>
+    <property name="text">
+     <string>Amount</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="expenceAdd">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>440</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #99ff99;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #003300;
+}
+QPushButton:hover {
+    background-color: #66cc66;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 15px;             
+    font-weight: bold;   
+	background-color:transparent;           
+}</string>
+    </property>
+    <property name="text">
+     <string>Expence Category</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="descriptionLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>190</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>260</y>
+      <width>251</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCalendarWidget QAbstractItemView {
+    selection-background-color: #66bb6a;  /* Selected date color */
+    background-color: #ffffff;
+    color: #2e7d32;
+    border-radius: 5px;
+}
+QCalendarWidget QToolButton {
+    background-color: #66bb6a;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3px;
+}
+QCalendarWidget QHeaderView::section {
+    background-color: #81c784;
+    color: #ffffff;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 15px;             
+    font-weight: bold;       
+	background-color:transparent;       
+}</string>
+    </property>
+    <property name="text">
+     <string>Description</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="expenceback">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>550</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 700 italic 9pt &quot;Arial&quot;;
+    background-color: #55aaff;
+    border: 1px solid #003300;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+QPushButton:hover {
+    background-color: #aaffff;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>260</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 700 9pt &quot;Arial&quot;;
+    color: #000000;                 
+	font-size: 15px;             
+    font-weight: bold;
+	background-color:transparent;              
+}</string>
+    </property>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="amountLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>130</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="totalExpenceButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>490</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #ffaaff; 
+    color: #000000;      
+	font-weight: bold;           
+    border: 2px solid #5a5a5a;  
+    border-radius: 10px;      
+    padding: 10px 20px;       
+    font-size: 15px;            
+}
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>View Expences Report</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
